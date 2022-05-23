@@ -1,10 +1,9 @@
 public class Entity {
-    int    Id   { get; set; }
-    string Name { get; set; }
+    public string Name { get; set; }
 
     public Entity() =>
-        (Id, Name) = (0, "Undefined");
+         Name = "Undefined";
 
-    public Entity(int id, string name) =>
-        (Id, Name) = (id, name);
+    public Entity(string name) =>
+        Name = name;
 }

@@ -8,7 +8,7 @@ public class Boat : Entity {
             ("Undefined", "Undefined", 0);
 
     public Boat
-        (int id, string name, string start, string end, int passengersCount) 
-        : base(id, name)=> (StartingPoint, ArrivalPoint, PassengerCount) =
+        (string name, string start, string end, int passengersCount) 
+        : base(name)=> (StartingPoint, ArrivalPoint, PassengerCount) =
             (start, end, passengersCount);
 }
